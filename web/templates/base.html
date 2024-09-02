@@ -1,0 +1,101 @@
+<!-- /*
+ * @Description: 
+ * @version: 
+ * @Author: zkh lsm
+ * @Date: 2024-8
+ */ -->
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}pcap文件上传{% endblock %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        #darkblue {
+            /* background-color: #003661; */
+            background-color: #25004a;
+        }
+
+        #transparent {
+            background: rgba(84, 65, 99, 0.6);
+            /* background-color: #0b0011; */
+        }
+        
+        /* #submitBtn {
+           background-color:#094c7e; 
+            background: rgba(9, 76, 126, .8);
+        }  */
+        
+        .bt {
+            margin-top: 50px;
+            text-align: center;
+            background: rgba(9, 76, 126, .8);
+        }
+        
+        .nav {
+            background-color: blue;
+        }
+        body {
+            /* background-color: black; */
+            background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/16021.jpg');
+            /* background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/16332.jpg'); */
+            /* background-image: url(web\images\bg.png); */
+            background-position: center;
+            /* background-repeat: no-repeat; */
+            background-attachment: fixed;
+
+        }
+
+        /* .container {
+            background-color: transparent;
+        } */
+
+        .author {
+            color: white;
+             width:1900px; 
+            padding-top: 200px;
+            text-align: center;
+            background-color: transparent;
+        }
+
+        .top {
+            background-color:7, 1, 11;
+            background: rgba(84, 65, 99, 0.6);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-light top px-5 mb-5 rounded">
+        <a href="#" class="navbar-brand  text-light">木马后门流量检测</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+</header>
+<main>
+    <div id="main" class="container py-3">
+        {% block content %}{% endblock %}
+    </div>
+</main>
+
+<div class="author" >
+    <h6>
+        Author: zkh and lsm;
+    </h6>
+</div>
+
+<!-- <footer class="bg-light py-3 mt-5">
+    <h5 class="container">
+        Author: zlx
+    </h5>
+</footer>   -->
+
+  
+</body>
+</html>
