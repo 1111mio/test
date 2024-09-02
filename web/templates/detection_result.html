@@ -9,14 +9,14 @@
 <title>{% block title %}pcap文件检测结果{% endblock %}</title>
 
 {% block content %}
-  <div class="container">
+  <div class="container text-light">
     <div class="row justify-content-center">
       <div class="col-md-8">
-        <div class="card mt-5">
-          <div class="card-header bg-info text-white">
+        <div class="card mt-5 bg-transparent">
+          <div class="card-header darkblue text-white rounded">
             <h5 class="text-center">Detection Result</h5>
           </div>
-          <div class="card-body">
+          <div class="card-body transparent rounded">
             <p class="font-weight-bold">文件: {{ result_dict.file_name }}</p>
             <p class="font-weight-bold">文件生成了 {{ result_dict.sample_num }} 个样本</p>
             <p class="font-weight-bold">预测类型: {{ result_dict.final_label }}</p>
@@ -24,10 +24,10 @@
             <p class="font-weight-bold">使用的模型名称: {{ result_dict.model_name }}</p>
 
             <form action="/detection_result" method="POST">
-              <button type="submit" class="btn btn-primary">返回</button>
+              <button type="submit" class="btn darkblue text-white">返回</button>
             </form>
             <p class="font-weight-bold" style="margin-top:2rem">详细信息: </p>
-            <table class="table table-bordered">
+            <table class="table table-bordered text-light">
                 <thead>
                     <tr>
                     <th>每个样本标签</th>
